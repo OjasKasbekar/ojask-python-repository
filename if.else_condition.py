@@ -18,8 +18,24 @@ elif(a<b and b>c):
     print("largest no is",b)
 else:
     print("largest no is",c)'''
+def largest(a,b,c):
+    if (a > b and a > c):
+        print("largest no is", a)
+    elif (a < b and b > c):
+        print("largest no is", b)
+    else:
+        print("largest no is", c)
+x= int(input("Enter 3 numbers"))
+y= int(input("Enter 3 numbers"))
+z= int(input("Enter 3 numbers"))
+r=largest(x,y,z)
+
+
+
+
+
                                   #turning 100
-n= input("your name")
+'''n= input("your name")
 a= int(input("your age"))
 d=2021+(100-a)
-print(n,"you will turn 100 in",d)
+print(n,"you will turn 100 in",d)'''
