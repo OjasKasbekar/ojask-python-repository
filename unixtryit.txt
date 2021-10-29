@@ -1,0 +1,48 @@
+1. mkdir test
+
+2.cat employeelist
+  cat skillset
+
+3.mkdir test2
+cat skillset
+ln -s skillset sfile
+ln  skillset hfile
+rm skillset
+
+4.chmod user2 g+r+w file1
+
+5.chmod user2 g+r-w file1
+
+6.chmod user o+w file1
+
+7.chmod user o-w file1 
+
+8.chgrp user3 employeelist
+
+9.chown user5 employeelist
+
+10.wc -l employeelist
+
+11. Create file “File1” 
+  Cat > File1 
+
+12. Append 2 more lines to the same file 
+    Cat >> File1 
+
+13 Create File2 with few lines 
+     Cat > File 2 
+
+14 Display the contents of both File1 and File2 
+     Cat File1  
+
+     Cat File2 
+
+15 Concatenate both File1 & 2
+       Cat File1 File2 
+
+16 Send the above output to File3 
+       Cat File1 File2 >File3
+
+17 Read File1,File2,File3… File5 . Observe the output       
+
+ Cat File1 File2 File3 File4 File5 File6  
