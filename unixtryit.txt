@@ -1,7 +1,7 @@
 1. mkdir test
 
-2.cat employeelist
-  cat skillset
+2.cat >employeelist
+  cat >skillset
 
 3.mkdir test2
 cat skillset
