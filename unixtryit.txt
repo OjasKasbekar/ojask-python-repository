@@ -46,3 +46,108 @@ rm skillset
 17 Read File1,File2,File3… File5 . Observe the output       
 
  Cat File1 File2 File3 File4 File5 File6  
+
+
+
+
+day3
+
+18.
+read num1
+read num2
+if [ $num1 -gt $num2 ]
+then
+  echo "Num1 is bigger"
+else
+  echo "Num2 is bigger"
+fi
+
+19.
+fuction
+addnums()
+{
+expr $1 + $2 +$c
+}
+read a
+read b
+addnums $a $b
+
+20.
+for i in 1 2 3 4 5
+do
+  echo $i
+done
+
+21.
+arguments
+echo $0
+echo $1
+echo $2
+echo $*
+
+22.
+read a b
+expr $a + $b
+
+23.
+read a b
+echo $a $b
+
+24.
+read file
+if test -s $file
+then
+  echo "file exists and is not empty"
+elif test -f $file
+then
+  echo "file exists and it is empty"
+else
+  echo "file dosen't exists"
+fi
+
+25.
+read a
+c=0
+until [ $a -eq 0 ]
+do
+ c=`expr $c + $a `
+ read a
+done
+echo $c
+
+26.
+var=`cat ./textfile.txt`
+for i in $var
+do
+  var2=`echo $i|wc -c`
+  var2=$((var2-1))
+  echo $i $var2
+done
+
+27.
+read a
+while [ $a != "EOF" ]
+do
+case $a in
+ [0-9]*) echo "Number";;
+ [a-z]*) echo "Alphabet";;
+ [A-Z]*) echo "Alphabet";;
+ *) echo "special character";;
+esac
+read a
+done
+
+28.
+read a
+echo $a
+until [ $a = "stop" ]
+do
+  read a
+done
+
+29.echo "enter a file name"
+read file
+echo "enter a path to copy the file"
+read filepath
+cp $file $filepath
+rm $file
